@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login y Registro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ff9800;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+      margin: 10px;
+      height: 350px;
+    }
+
+    .form-container img {
+      max-width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .form-container input {
+      width: 80%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-container, .login {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 8px;
+      background-color: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="form-container login">
+      <h2>Iniciar sesión</h2>
+      <form action="../home/home.html" method="post">
+          <input type="email" placeholder="Email" name="email" required>
+          <input type="password" placeholder="Contraseña" name="contraseña" required>
+          <button type="submit"><a href="../home/home.html">Iniciar sesión</a></button>
+      </form>
+  </div>
+  <div class="form-container">
+    <h2>Registrarse</h2>
+    <form action="../home/home.html" method="post">
+        <input type="text" placeholder="Nombre" name="nombre" required>
+        <input type="text" placeholder="Apellido" name="apellido" required>
+        <input type="text" placeholder="Cédula" name="cedula" required>
+        <input type="email" placeholder="Email" name="email_registro" required>
+        <input type="password" placeholder="Contraseña" name="contraseña_registro" required>
+        <button type="submit"><a href="../home/home.html">Registrarse</a></button>
+    </form>
+  </div>
+</body>
+
+</html>

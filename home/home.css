@@ -1,0 +1,46 @@
+.body {
+    background-color: rgb(252, 225, 176);
+}
+
+.square {
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    position: relative;
+    width: 56%;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.graphics {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-option {
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 992px) {
+    .btn-option {
+        font-size: 2vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1567px) {
+
+    .btn-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-option {
+        width: 100%;
+    }
+}
